@@ -78,11 +78,12 @@ body {
     transform: scale(1.1);
 }
 
-.social-icon svg,
-.social-icon img {
-    background-color: #03045E;
-    padding: 8px;
-    border-radius: 4px;
+.social-icon svg {
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover svg {
+    transform: scale(1.1);
 }
 
 .menu-icon {
