@@ -353,10 +353,10 @@ body {
 
 .showcase-image {
     width: 569px;
+    max-width: 100%;
     height: 379px;
     border-radius: 8px;
     object-fit: cover;
-    flex-shrink: 0;
 }
 
 .showcase-details {
@@ -465,14 +465,19 @@ body {
     }
     
     .project-showcase {
-        grid-template-columns: 1fr;
-        gap: 40px;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .showcase-details {
+        order: 1;
+        max-width: 100%;
     }
     
     .showcase-image {
         width: 100%;
         height: auto;
-        max-width: 100%;
+        min-height: 250px;
         order: 2;
     }
     
@@ -695,11 +700,14 @@ body {
     }
     
     .project-showcase {
-        margin-top: 60px;
+        margin-top: 40px;
+        gap: 20px;
     }
     
     .showcase-image {
-        height: 200px;
+        width: 100%;
+        height: auto;
+        min-height: 180px;
     }
     
     .contact {
